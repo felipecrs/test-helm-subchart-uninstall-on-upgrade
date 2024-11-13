@@ -1,5 +1,7 @@
 # test-helm-subchart-uninstall-on-upgrade
 
+What should happen if we `helm upgrade` to a chart version that no longer has one of the subcharts? Answer: the subchart is uninstalled on `helm upgrade`.
+
 ```console
 $ k3d cluster create
 
